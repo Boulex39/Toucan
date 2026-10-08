@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-Toucan</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f15c8a4b75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./image/logo.svg" alt="toucan" id="toucan">
+            <div class="search">
+                <input type="text" id="eanInput" placeholder="Entrez un code EAN à 13 chiffres" maxlength="13">
+                <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </header>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div id="productInfo" class="product-info">
+            <h2 id="productName"></h2>
+            <p><strong>Marque :</strong> <span id="productBrand"></span></p>
+            <p><strong>Catégorie :</strong> <span id="productCategory"></span></p>
+            <p><strong>Ingrédients :</strong> <span id="productIngredients"></span></p>
+            <p><strong>Allergènes :</strong> <span id="productAllergens"></span></p>
+            <p><strong>Packaging :</strong> <span id="productPackaging"></span></p>
+            <div id="productImages"></div>
+        </div>
+
+        <footer>
+            <p>Tous droits réservés ©</p>
+        </footer>
+    </div>
+
+    <script src="./js/style.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* >>> clé : le parent direct du footer devient flex en colonne */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #FFD39A;
+}
+
+#toucan {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+input {
+    width: 60%;
+    border-radius: 25px 0 0 25px;
+    font-size: 0.9em;
+    border: none;
+}
+
+#eanInput {
+    padding-left: 2em;
+}
+  
+  button {
+    width: 12%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+}
+  
+  button:hover {
+    background-color: #515151;
+    opacity: 80%;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #FFD39A;
+  padding: 25px 0;
+  margin-top: auto;   /* pousse en bas */
+}
+
+/* Style pour le conteneur des informations du produit */
+.product-info {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Par défaut caché, visible après récupération des données */
+}
+
+/* Titre du produit */
+#productName {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Section de chaque information du produit */
+.product-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Mettre en gras les labels des informations */
+.product-info p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour l'image du produit */
+#productImages img {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Message d'erreur */
+.error-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ff4d4d;
+}
+
+/* Ajouter un style pour rendre les informations plus lisibles */
+@media (max-width: 768px) {
+    .product-info {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #productName {
+        font-size: 1.5em;
+    }
+
+    .product-info p {
+        font-size: 1em;
+    }
+}
